@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bar Chart</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
 </head>
 
 <body>
@@ -19,16 +21,32 @@
         </ul>
 
         <ul class="bars">
-            <li><div class="bar" data-percentage="50"></div><span> Option 01</span></li>
-            <li><div class="bar" data-percentage="100"></div><span> Option 02</span></li>
-            <li><div class="bar" data-percentage="150"></div><span> Option 03</span></li>
-            <li><div class="bar" data-percentage="200"></div><span> Option 04</span></li>
-            <li><div class="bar" data-percentage="250"></div><span> Option 05</span></li>
+            <li><div class="bar" data-percentage="60"></div><span> Exercise 01</span></li>
+            <li><div class="bar" data-percentage="20"></div><span> Exercise 02</span></li>
+            <li><div class="bar" data-percentage="85"></div><span> Exercise 03</span></li>
+            <li><div class="bar" data-percentage="98"></div><span> Exercise 04</span></li>
+            <li><div class="bar" data-percentage="33"></div><span> Exercise 05</span></li>
         </ul>
 
     </div>
 
     <!--chart end-->
+
+
+<!--javascript start-->
+    <script type="text/javascript">
+    $(function(){
+        $('.bars li .bar').each(function(key, bar){
+            var percentage = $(this).data('percentage');
+            $(this).animate({
+                'height' : percentage + '%'
+            }, 1000);
+        });
+    });
+    </script>
+
+    <!--javascript start-->
+    
 </body>
 
 </html>

@@ -75,7 +75,6 @@ body {
     display: block;
     background: #17C0EB;
     width: 50px;
-    height: 100px;
     position: absolute;
     bottom: 0;
     margin-left: 25px;
@@ -93,5 +92,8 @@ body {
 .bars .bar:before{
     color: #fff;
     content:attr(data-percentage) '%';
+    padding: relative;
+    bottom: 20px;
+
 }
 
