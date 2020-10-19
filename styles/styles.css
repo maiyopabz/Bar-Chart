@@ -54,6 +54,34 @@ body {
     width: 500px;
     height: 300px;
     box-shadow: 0 0 10px 0 #555;
+    border-radius:  5px;
+}
+.bars li {
+    display: table-cell;
+    width: 100px;
+    height: 300px;
+    position: relative;
 
 }
+
+.bars span {
+    width: 100px;
+    position: absolute;
+    bottom: -30px;
+    text-align: center;
+}
+
+.bars .bar {
+    display: block;
+    background: #17C0EB;
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 25px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(146, 212, 228, 0.5);
+    
+}
+
 
