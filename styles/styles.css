@@ -84,4 +84,14 @@ body {
     
 }
 
+.bars .bar:hover {
+    background: #55EFC4;
+    box-shadow: 0 0 10px 0 rgba(85, 239, 196, 0.5);
+    cursor: pointer;
+}
+
+.bars .bar:before{
+    color: #fff;
+    content:attr(data-percentage) '%';
+}
 
